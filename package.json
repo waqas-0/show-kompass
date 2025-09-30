@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "predeploy": "yarn build && cp dist/index.html dist/404.html",
     "deploy": "yarn build && cp docs/index.html docs/404.html && git add docs -f && git commit -m \"Deploy\" && git push"
